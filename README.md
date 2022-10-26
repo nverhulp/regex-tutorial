@@ -4,6 +4,12 @@
 
 Your Challenge this week is to create a tutorial that explains how a specific regular expression, or regex, functions by breaking down each part of the expression and describing what it does.
 
+## User Story
+
+AS A web development student
+I WANT a tutorial explaining a specific regex
+SO THAT I can understand the search pattern the regex defines
+
 ## Acceptance Criteria
 
 GIVEN a regex tutorial
