@@ -1,10 +1,12 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+This tutorial will explain what Regex are and how they work. Regex are known as regular expressions which are often used for defining filters. They are a sequence of characters that allow a user to define and determine a specific serach pattern.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This tutorial will explain the components of a regex (regular expression) that is used to match a Hex Value. In HTML, a hex value is a color code that has a value which tells the device how much of the color should be displayed. This is an example of a code snippit of regex used to match a hex value: 
+
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ## Table of Contents
 
