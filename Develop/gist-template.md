@@ -50,6 +50,8 @@ Character classes tell what type of characters should be expected and are often 
 
 ### Flags
 
+A flag is an optional component that modifies the default searching behavior of a regex. There are 6 flags that are single lowercase alphabetic characters and each serve a different purpose. They are `i`, `g`, `s`, `m`, `y` and `u`. When looking at our code snippet, it does not appear to have any flags which means that the regular expression will search in the default searching behavior. 
+
 ### Grouping and Capturing
 
 Grouping and Capturing (`()`)
