@@ -70,15 +70,15 @@ A greedy match matches an element as many times as possible and a lazy match mat
 
 ### Boundaries
 
-Boundaries (`\b` and `\B`)
+Boundaries are either `\b` or `\B`. `\b` represents an anchor like caret which matches positions where one side is a word character and the other is not. `\B` matches all the positions where \b doesn't match. We do not have this in our example. 
 
 ### Back-references
 
-Back-references (`\1`)
+Back-references match the same text that has already been matched by a capturing group. Using an opening tag into a back-reference allows a user to reuse the name of the tag for the closing tag. `\1` is often used as the back-reference and references the first capturing group. We do not have this in our example. 
 
 ### Look-ahead and Look-behind
 
-Look-ahead and Look-behind (`(?=)` and `(?<=)`)
+Look-ahead asserts what immediately follows the current position in the string whereas look-behind assets what immediately precedes the current position in the string. These two concepts forces the main expressions to be exactly what it has been defined as. This does not occur in our example. 
 
 ## Author
 
