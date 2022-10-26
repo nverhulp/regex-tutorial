@@ -54,17 +54,19 @@ A flag is an optional component that modifies the default searching behavior of 
 
 ### Grouping and Capturing
 
-Grouping and Capturing (`()`)
+Grouping groups multiple patterns together as a whole without creating a capture group. Capturing groups provides extra information when using a regular expression pattern to match against a string. 
 
 ### Bracket Expressions
 
 /^#?`([a-f0-9]{6}|[a-f0-9]{3})`$/
 
-Bracket Expressions (`[]`)
+Bracket expressions indicate the beginning of a character class or quantifier statement. Brackets tell us that any individual character between the brackets will match. In this example, the parenthesis define our bracket expressions. 
 
 ### Greedy and Lazy Match
 
 /^#`?`([a-f0-9]{6}|[a-f0-9]{3})$/
+
+A greedy match matches an element as many times as possible and a lazy match matches an element as few times as possible. The `?` in our example signifies a lazy quanitifies which means the regex engine will match as few times as possible. 
 
 ### Boundaries
 
