@@ -26,27 +26,43 @@ This tutorial will explain the components of a regex (regular expression) that i
 
 ### Anchors
 
-Anchors do not match any of the characters in a regex and are used at the start and end of a string expression. In this particular example, referring to the code snippet above, the anchors are `/^` and `$/`.
+Anchors (`^` and `$`) do not match any of the characters in a regex and are used at the start and end of a string expression. In this particular example, referring to the code snippet above, the anchors are `/^` and `$/`.
 
 ### Quantifiers
 
+Quantifiers  (`*`, `+`, `?` and `{}`) indicate how many characters are expected and specify how many specific characters must be present in the input in order for there to be a match. The `?` indicates that the expression will match 0 or 1 time. In our specific example, the quantifiers are `{6}` and `{3}` which indicate that the length of component preceding these quantifiers are `6` and `3`. An example of these are: #FFFFFF and #FFF.
+
 ### OR Operator
 
+OR Operators (`|` or `[]`)
+
 ### Character Classes
+
+Character Classes (`\d`, `\w`, `\s` and `.`)
 
 ### Flags
 
 ### Grouping and Capturing
 
+Grouping and Capturing (`()`)
+
 ### Bracket Expressions
+
+Bracket Expressions (`[]`)
 
 ### Greedy and Lazy Match
 
 ### Boundaries
 
+Boundaries (`\b` and `\B`)
+
 ### Back-references
 
+Back-references (`\1`)
+
 ### Look-ahead and Look-behind
+
+Look-ahead and Look-behind (`(?=)` and `(?<=)`)
 
 ## Author
 
