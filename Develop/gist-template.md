@@ -28,25 +28,25 @@ This tutorial will explain the components of a regex (regular expression) that i
 
 `/^`#?([a-f0-9]{6}|[a-f0-9]{3})`$/`
 
-Anchors (`^` and `$`) do not match any of the characters in a regex and are used at the start and end of a string expression. In this particular example, referring to the code snippet above, the anchors are `/^` and `$/`.
+Anchors do not match any of the characters in a regex and are used at the start and end of a string expression. In this particular example, referring to the code snippet above, the anchors are `/^` and `$/`.
 
 ### Quantifiers
 
 /^#`?`([a-f0-9]`{6}`|[a-f0-9]`{3}`)$/
 
-Quantifiers  (`*`, `+`, `?` and `{}`) indicate how many characters are expected and specify how many specific characters must be present in the input in order for there to be a match. The `?` indicates that the expression will match 0 or 1 time. In our specific example, the quantifiers are `{6}` and `{3}` which indicate that the length of the component preceding these quantifiers are `6` and `3`. An example of these are: #FFFFFF and #FFF.
+Quantifiers indicate how many characters are expected and specify how many specific characters must be present in the input in order for there to be a match. The `?` indicates that the expression will match 0 or 1 time. In our specific example, the quantifiers are `{6}` and `{3}` which indicate that the length of the component preceding these quantifiers are `6` and `3`. An example of these are: #FFFFFF and #FFF.
 
 ### OR Operator
 
 /^#?([a-f0-9]{6}`|`[a-f0-9]{3})$/
 
-OR Operators (`|` or `[]`) indicate that the component can match either string that is before or after the `|`. Looking at our example, this shows us that our hex value is either 6 or 3 characters. This is because `[a-f0-9]{6}` indicates `6` and `[a-f0-9]{3}` indicates `3`. 
+OR operators indicate that the component can match either string that is before or after the `|`. Looking at our example, this shows us that our hex value is either 6 or 3 characters. This is because `[a-f0-9]{6}` indicates `6` and `[a-f0-9]{3}` indicates `3`. 
 
 ### Character Classes
 
 /^#?(`[a-f0-9]`{6}|`[a-f0-9]`{3})$/
 
-Character Classes (`\d`, `\w`, `\s` and `.`)
+Character classes tell what type of characters should be expected and are often enclosed within square brackets. The character class for our example is `[a-f0-9]` and this tells us that we should expect to see letters `a-f` and numbers `0-9`. 
 
 ### Flags
 
