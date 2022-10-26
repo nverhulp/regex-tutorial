@@ -26,7 +26,7 @@ This tutorial will explain the components of a regex (regular expression) that i
 
 ### Anchors
 
-Anchors do not match any of the characters in a regex and are used at the start and end of a string expression. In this particular example, referring to the code snippet above, the anchors are <mark>/^</mark> and <mark>$/</mark>.
+Anchors do not match any of the characters in a regex and are used at the start and end of a string expression. In this particular example, referring to the code snippet above, the anchors are ==/^== and <mark>$/</mark>.
 
 ### Quantifiers
 
