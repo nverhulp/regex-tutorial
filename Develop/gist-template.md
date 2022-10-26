@@ -26,17 +26,25 @@ This tutorial will explain the components of a regex (regular expression) that i
 
 ### Anchors
 
+`/^`#?([a-f0-9]{6}|[a-f0-9]{3})`$/`
+
 Anchors (`^` and `$`) do not match any of the characters in a regex and are used at the start and end of a string expression. In this particular example, referring to the code snippet above, the anchors are `/^` and `$/`.
 
 ### Quantifiers
 
-Quantifiers  (`*`, `+`, `?` and `{}`) indicate how many characters are expected and specify how many specific characters must be present in the input in order for there to be a match. The `?` indicates that the expression will match 0 or 1 time. In our specific example, the quantifiers are `{6}` and `{3}` which indicate that the length of component preceding these quantifiers are `6` and `3`. An example of these are: #FFFFFF and #FFF.
+/^#`?`([a-f0-9]`{6}`|[a-f0-9]`{3}`)$/
+
+Quantifiers  (`*`, `+`, `?` and `{}`) indicate how many characters are expected and specify how many specific characters must be present in the input in order for there to be a match. The `?` indicates that the expression will match 0 or 1 time. In our specific example, the quantifiers are `{6}` and `{3}` which indicate that the length of the component preceding these quantifiers are `6` and `3`. An example of these are: #FFFFFF and #FFF.
 
 ### OR Operator
 
-OR Operators (`|` or `[]`)
+/^#?([a-f0-9]{6}`|`[a-f0-9]{3})$/
+
+OR Operators (`|` or `[]`) indicate that the component can match either string that is before or after the `|`. Looking at our example, this shows us that our hex value is either 6 or 3 characters. This is because `[a-f0-9]{6}` indicates `6` and `[a-f0-9]{3}` indicates `3`. 
 
 ### Character Classes
+
+/^#?(`[a-f0-9]`{6}|`[a-f0-9]`{3})$/
 
 Character Classes (`\d`, `\w`, `\s` and `.`)
 
@@ -48,9 +56,13 @@ Grouping and Capturing (`()`)
 
 ### Bracket Expressions
 
+/^#?`([a-f0-9]{6}|[a-f0-9]{3})`$/
+
 Bracket Expressions (`[]`)
 
 ### Greedy and Lazy Match
+
+/^#`?`([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ### Boundaries
 
@@ -66,7 +78,7 @@ Look-ahead and Look-behind (`(?=)` and `(?<=)`)
 
 ## Author
 
-Nicole Verhulp is a recent UC Davis graduate who is taking a coding bootcamp through UC Davis's continued learning program.
+Nicole Verhulp is a recent Psychology and Political Science graduate who is taking a coding bootcamp through UC Davis's continued learning program to complete a certification in full-stack development.
 
 Check out her GitHub repository for all of her previous projects!
 
